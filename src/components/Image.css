@@ -1,0 +1,39 @@
+.images {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 430px;
+}
+
+.loadLogo {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  margin-top: 215px;
+  margin-left: 65px;
+  transform: translate(-50%, -50%);
+  animation: spinning 3s infinite ease;
+}
+
+@keyframes spinning {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.umbrella-image {
+  height: 430px;
+  z-index: 1;
+}
+
+.umbrella-brand {
+  position: absolute;
+  background: no-repeat;
+  height: 50px;
+  width: 150px;
+  margin-top: 350px;
+  z-index: 3;
+}

@@ -1,0 +1,44 @@
+.combineBtn {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  width: 340px;
+  height: 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: default;
+  text-align: center;
+}
+
+label {
+  cursor: default;
+}
+
+.upload {
+  background: no-repeat;
+  cursor: pointer;
+  float: left;
+}
+
+.loadBtn {
+  background: no-repeat;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  transform: translate(-50%, -50%);
+  animation: spinning 3s infinite ease;
+}
+
+.clear {
+  float: right;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 20px;
+}
