@@ -1,15 +1,22 @@
 import Button from "./Button";
 import React from "react";
 import "./Selector.css";
+
+// You can change colors from here as needed,
+// Make sure you also added umbrella images of same color in App.js
+const select1 = "pink";
+const select2 = "blue";
+const select3 = "yellow";
+
 export default function Selector({
   select,
   setColor,
-  Pink,
+  umbrellaColor1,
   handleChange,
   handleClear,
   setSelect,
-  Blue,
-  Yellow,
+  umbrellaColor2,
+  umbrellaColor3,
   upload,
   name,
   change,
@@ -24,36 +31,36 @@ export default function Selector({
       <div className="colors">
         <ul>
           <li
-            className={select === "pink" ? "pink" : ""}
+            className={select === select1 ? select1 : ""}
             onClick={() => {
-              setColor(Pink);
+              setColor(umbrellaColor1);
               handleChange();
-              setSelect("pink");
+              setSelect(select1);
             }}
             style={{
-              backgroundColor: "pink",
+              backgroundColor: select1,
             }}
           />
           <li
-            className={select === "blue" ? "blue" : ""}
+            className={select === select2 ? select2 : ""}
             onClick={() => {
-              setColor(Blue);
+              setColor(umbrellaColor2);
               handleChange();
-              setSelect("blue");
+              setSelect(select2);
             }}
             style={{
-              backgroundColor: "blue",
+              backgroundColor: select2,
             }}
           />
           <li
-            className={select === "yellow" ? "yellow" : ""}
+            className={select === select3 ? select3 : ""}
             onClick={() => {
-              setColor(Yellow);
+              setColor(umbrellaColor3);
               handleChange();
-              setSelect("yellow");
+              setSelect(select3);
             }}
             style={{
-              backgroundColor: "yellow",
+              backgroundColor: select3,
             }}
           />
         </ul>

@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Blue from "./asset/Blue.png";
-import Pink from "./asset/Pink.png";
-import Yellow from "./asset/Yello.png";
 import upload from "./asset/upload_icon.svg";
 import Selector from "./components/Selector";
 import Image from "./components/Image";
+
+// Change umbrella images from here as color needed
+import umbrellaColor1 from "./asset/Pink.png";
+import umbrellaColor2 from "./asset/Blue.png";
+import umbrellaColor3 from "./asset/Yello.png";
 
 import "./styles.css";
 
@@ -56,17 +58,17 @@ function App() {
           change={change}
           select={select}
           color={color}
-          Blue={Blue}
+          Blue={umbrellaColor2}
           brand={brand}
         />
         <Selector
           select={select}
           setColor={setColor}
-          Pink={Pink}
+          umbrellaColor1={umbrellaColor1}
           handleChange={handleChange}
           setSelect={setSelect}
-          Blue={Blue}
-          Yellow={Yellow}
+          umbrellaColor2={umbrellaColor2}
+          umbrellaColor3={umbrellaColor3}
           upload={upload}
           name={name}
           handleClear={handleClear}
